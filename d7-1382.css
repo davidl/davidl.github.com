@@ -1,0 +1,281 @@
+@import url('http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold');
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),  url('League_Gothic-webfont.woff') format('woff'),  url('League_Gothic-webfont.ttf') format('truetype'),  url('League_Gothic-webfont.svg#webfontOTINA1xY') format('svg');
+}
+
+/* _________________________________________________
+
+320 and Up boilerplate extension
+
+Author: Andy Clarke
+Version: 0.9b
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+_____________________________________________________
+
+*/
+
+/* 1.ROOT */
+html {
+	background: #ededed url('data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%03%00%00%00%03%04%03%00%00%00%A4%06%A8%8C%00%00%00%18PLTE%EE%EE%EE%DD%DD%DD%DD%EE%1E%DD%EE%1E%DD%EE%1E%DD%EE%1E%DD%DD%DD%D5%D5%D5)2%99%8E%00%00%00%11IDAT%08%99cH(%60(c%60%60O%00%00%08%D5%01%AENN%EB%C0%00%00%00%00IEND%AEB%60%82') 0 0 repeat;
+}
+
+body {
+	font-family: 'Droid Sans', 'MyriadPro-Regular', 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	padding-top: 2em;
+}
+
+/* 2.HEADINGS */
+
+h1, h2, h3 { font-weight: normal; }
+
+h1, h2 {
+	font-family: 'LeagueGothicRegular';
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	background-color: #EEE;
+	background-image: -moz-linear-gradient(center bottom, rgb(221,221,221) 23%, rgb(239,239,239) 50%, rgb(238,238,238) 81%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.23, rgb(221,221,221)), color-stop(0.5, rgb(239,239,239)), color-stop(0.81, rgb(238,238,238)));
+	border-color: #DDD #DDD #CDCDCD;
+	border-color: rgba(204, 204, 204, 0.4) rgba(204, 204, 204, 0.6) rgba(204, 204, 204, 0.8);
+	-moz-box-shadow: 0 7px 6px -4px rgba(51, 137, 207, 0.4), 0 2px 10px 2px rgba(204, 204, 204, 0.4);
+	-webkit-box-shadow: 0 7px 6px -4px rgba(51, 137, 207, 0.4), 0 2px 10px 2px rgba(204, 204, 204, 0.4);
+	box-shadow: 0 7px 6px -4px rgba(51, 137, 207, 0.4);
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 6em; /* 96 / 16 = 6 */
+	line-height: 1.2;
+	text-shadow: 1px 3px 6px rgba(69, 93, 111, 0.4), 0 1px 1px rgb(51, 137, 207);
+	width: 5em;
+}
+
+h1:before, h1:after { display: none; }
+
+h1 .da { margin: 0 -5px 0 -3px; }
+
+h1 .la { margin: 0 0 0 3px; }
+
+h1, section { -webkit-background-clip: padding-box; }
+
+h2 {
+	font-size: 3em; /* 48 / 16 = 3 */
+	font-variant: normal;
+	margin: 0 0 0.5ex;
+	text-shadow: 0 1px 1px #3389CF;
+	text-transform: none;
+}
+
+h3 {
+	background-color: transparent;
+	font-family: 'Droid Sans', 'MyriadPro-Regular', 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* 3.TYPOGRAPHY */
+/* 4.LINKS */
+a:link, a:visited {
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+#hello a span {
+	background-repeat: no-repeat;
+	height: 16px;
+	position: absolute;
+	right: 20px;
+	width: 16px;
+	-moz-transition: -moz-box-shadow 0.1s;
+	-o-transition: box-shadow 0.1s;
+	-webkit-transition: -webkit-box-shadow 0.1s;
+}
+
+#hello a:hover span {
+	-moz-box-shadow: 0 0 1.4ex rgba(51, 137, 207, 0.9);
+	-webkit-box-shadow: 0 0 1.4ex rgba(51, 137, 207, 0.9);
+	box-shadow: 0 0 1.4ex rgba(51, 137, 207, 0.9);
+	*cursor: hand;
+}
+
+#twitter-term span {
+	background-image: url("data:image/x-icon,%00%00%01%00%01%00%10%10%00%00%01%00%20%00h%04%00%00%16%00%00%00(%00%00%00%10%00%00%00%20%00%00%00%01%00%20%00%00%00%00%00%00%00%00%00%13%0B%00%00%13%0B%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00LLL%1B%99%99%9Ax%C9%CA%CC%BF%E1%E2%E6%D6%EE%F0%F3%DA%EE%F0%F3%DA%EF%F0%F4%DB%E1%E2%E5%D6%AC%AC%AD%A2443%2B%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00aaa4%DF%DF%E1%C6%FF%FF%FF%FF%FF%FE%F2%FF%FF%F6%D9%FF%FF%F3%D3%FF%FF%F3%D4%FF%FF%F3%D3%FF%FF%F8%E1%FF%FF%FF%FF%FF%C8%C8%C9%B9%20%20%20%15%00%00%00%00%00%00%00%00%00%00%00%00fff%24%EB%EC%ED%CE%FF%FF%FD%FF%FF%EB%B8%FF%FD%D8%81%FF%FC%D4s%FF%FC%D4s%FF%FC%D4s%FF%FC%D4q%FF%FC%D5u%FF%FF%F0%C8%FF%FA%FC%FF%FA%7C%7C%7CO%00%00%00%00%00%00%00%00%00%00%00%00%C9%C9%CA%94%FF%FF%FF%FF%FE%E6%AB%FF%FC%D2l%FF%FC%D3n%FF%FC%D3n%FF%FC%D2m%FF%FC%D2m%FF%FC%D2m%FF%FC%D0d%FF%FF%E5%A7%FF%FB%FC%FD%FF%9C%9C%9D%5E%00%00%00%00%00%00%00%00rrr%23%F8%F9%FD%E1%FF%F4%D6%FF%FC%D3r%FF%FC%D3p%FF%FC%D3q%FF%FD%D8%80%FF%FD%DC%8C%FF%FD%DC%8B%FF%FD%DB%89%FF%FD%DD%92%FF%FF%F8%DF%FF%F9%FA%FD%E7ooo1%00%00%00%00%00%00%00%00%A4%A5%A5J%FA%FA%FC%F9%FF%E8%AF%FF%FC%D2l%FF%FC%D3n%FF%FD%DD%91%FF%FF%F7%E7%FF%FF%FD%F8%FF%FF%FC%F6%FF%FF%FC%F6%FF%FF%FD%F9%FF%FA%FB%FC%EE%C5%C6%C6n%00%00%00%00%00%00%00%00%00%00%00%00%B2%B3%B4V%F9%F9%F9%FC%FF%E6%A6%FF%FC%D2l%FF%FC%D2m%FF%FD%EA%B9%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%C1%C1%C2%AF444%17%00%00%00%00%00%00%00%00%00%00%00%00%B0%B1%B1V%F9%F9%FA%FC%FF%E6%A7%FF%FC%D2l%FF%FC%D3n%FF%FD%E7%AE%FF%FE%FA%EF%FF%FE%F8%EB%FF%FE%F8%EA%FF%FE%F8%EA%FF%FF%FC%F3%FF%F9%F9%FA%FB%A2%A2%A3%99%13%13%13%0B%00%00%00%00%00%00%00%00%B0%B1%B1V%F9%F9%FA%FC%FF%E6%A7%FF%FC%D2m%FF%FC%D4r%FF%FC%D6y%FF%FC%D8%80%FF%FC%D8%7F%FF%FC%D8%7F%FF%FC%D7%7D%FF%FD%DA%85%FF%FF%F6%D8%FF%F7%F8%FB%F3oooD%00%00%00%00%00%00%00%00%B0%B1%B1V%F9%F9%FA%FC%FF%E6%A7%FF%FC%D2m%FF%FC%D4s%FF%FC%D4q%FF%FC%D3n%FF%FC%D3n%FF%FC%D3n%FF%FC%D3n%FF%FC%CFd%FF%FF%E5%A5%FF%FC%FC%FD%FF%97%97%98%60%00%00%00%00%00%00%00%00%B0%B1%B1V%F9%F9%FA%FC%FF%E6%A7%FF%FC%D2m%FF%FC%D4s%FF%FC%D5u%FF%FC%D6x%FF%FC%D6x%FF%FC%D6x%FF%FC%D5v%FF%FC%D7%7D%FF%FF%F3%D0%FF%F9%FA%FD%F2%86%86%86%3F%00%00%00%00%00%00%00%00%B0%B1%B1V%F9%F9%FA%FC%FF%E6%A7%FF%FC%D2l%FF%FC%D3n%FF%FC%E4%A8%FF%FF%F6%E1%FF%FF%F8%E1%FF%FF%F6%DF%FF%FF%F6%DE%FF%FF%FB%EC%FF%FF%FF%FF%FF%D2%D2%D3%93%5B%5B%5B%04%00%00%00%00%00%00%00%00%B2%B3%B4W%FA%FA%FA%FD%FF%E5%A5%FF%FC%D1i%FF%FC%D1j%FF%FE%EA%B9%FF%FC%FE%FF%FD%EE%F0%F3%C4%F5%F6%F9%AF%F3%F4%F7%B3%EC%ED%EF%AE%D8%D8%D9m%83%83%83%0D%00%00%00%00%00%00%00%00%00%00%00%00%A6%A6%A6%3E%FD%FE%FF%F3%FF%EF%C7%FF%FC%D4s%FF%FC%D6%7B%FF%FF%F6%DB%FF%F3%F4%F8%E4%87%87%88%2C%00%00%00%00%E0%E0%E0%06%C5%C5%C5%04%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00SSS%08%ED%ED%EE%A5%FF%FF%FF%FF%FF%F7%DF%FF%FF%F9%E4%FF%FF%FF%FF%FF%C3%C3%C3%85%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%93%93%93%17%D6%D7%D7%88%E7%E9%EC%CE%E8%E9%EC%C9%DB%DB%DBuvvv%0C%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%F0%03%00%C0%E0%01%00%C0%C0%01li%C0%01%3E%0A%80%01%20%20%80%03%20%20%80%03%20%20%80%01%20%20%80%01%20%20%80%01%20%20%80%01%20%20%80%01%20%20%80%03%20%20%80O%20%20%80%FF%20%20%C0%FF%20%20");
+	*background-image: url(http://twitter.com/favicon.ico);
+	background-image/*\**/: url(http://twitter.com/favicon.ico)\9;
+	top: 12%;
+}
+
+#tumblr-term span {
+	background-image: url("data:image/gif,GIF89a%10%00%10%00%E6n%00%3F%5Cw%207M%3E%5Bv%40%5Dx%207N%3DZu6Rl%22%3ATA%5EyKi%848UoEc~%23%3BR7Sn!8OGe%80Hf%82%3CXsIg%82V_j4Pk9UpC%60%7B%3AVq%BA%C0%C7%3CYt%3BXs%23%3AQ%3EZu%24%3BRDa%7C3OiHe%81B%60%7B9Vp7Tn%C0%C9%D4Pi%81%229P!9P%BD%C4%CEVm%83%3DYt%E1%E1%E5A_z%96%9D%A6%DF%E2%E8%E7%E8%ED%C0%C8%D2%2B%3CMYcn%3BWr%3FIV%2F%3FQ6Rm%B4%BA%C3p%87%9D7Sm8TnEb%7D%3AWrGe%81If%82Gd%80Jg%836Sm%2B%3AJ%BF%C8%D1%3AWq_p%82Fd%7Fez%8FB_z4I%5E3Lc8Oe%40%5Bt%3BXrA%5Bs%8E%A1%B2%E1%E6%EC%3DXqf%7F%96Db%7DFd%80%22%3AQJh%835I%5E%BB%C4%CEHf%818To%85%99%AC%E1%E5%ECEb~%AB%B4%BF%BD%BF%C5%B6%BD%C6*C%60Ca%7CFc%7FIg%83(4BJh%844Pj5Qk%1F6MKi%85%DF%DF%E3%EB%EE%F3(%3FX%FF%FF%FF%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00!%F9%04%01%00%00n%00%2C%00%00%00%00%10%00%10%00%00%07%D8%80nm%83%84%85%85%82%07f%8A%09j%8D%8E%8Da%1Dm%3E%12d%96PlN%8Af%8Cj%92%0F%0F%3D%20%5Blle%95%96%40V%0Cm%0B%0BcO%5C%A528R%20Y%10%10%ACb%1E%1E%A5%BFl0LFT%3F%1Bm%08%2CHC.%A5%18%18-5S%3B%5D%C7%00%00%03Q(%A5eIWK!%16%16Um%05%05%1C%02%24l%2Fe%D8%03%03%08%08%26mM%1A%11%11X%2Bke%E7%02%FE%00'%DAT%10q%E1%02%985k%26h8R%22C%06%15%0E%DA4%18%A1C%8B%17%84%18%8B%10%E11%23%A2%81%8F6R%DC%C0%F8%85%86%02%05%15%08%B49C%01%8DK%251%26%94)%23%24H%8E%06*%0F%7C%F8p%A6g%CF%96.%D1%1C%20%E0%26%8D%D1%A3H%03(%0D%E0%26%10%00%3B");
+	*background-image: url(http://tumblr.com/favicon.ico);
+	background-image/*\**/: url(http://tumblr.com/favicon.ico)\9;
+	top: 24%;
+}
+
+#flickr-term span {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGlQTFRFAGXN/wCHvt3zQqXh/4jI/2W4/7Hb0OH0g7Pl/3zCpdDw/269XLHm/8flYbLmP6XhS6ji/3/EXrHm/2m6/9Hq/37E/7Pb/2q7SKjiptDw/9Dqv93z/8jl/7Lc/3C9YLHl/wCIAGPM////ESCKGgAAACN0Uk5T/////////////////////////////////////////////wBmKYOWAAAAXklEQVR42mJQQgMMZAlISwgwgZi8ctwyIAF5RSDgUVLiVAACUSUGJhBfkYFdihEkoMDGwAwR4GCBCLBiCsC0iMC0KPGBBISghgqCrJXkZ+YCWSsrLixGrtNRAUCAAQCpcB1xmEOQ6QAAAABJRU5ErkJggg==");
+	*background-image: url(http://flickrtheblog.wordpress.com/files/2008/11/favicon.gif);
+	background-image/*\**/: url(http://flickrtheblog.wordpress.com/files/2008/11/favicon.gif)\9;
+	top: 36%;
+}
+
+#cleartype-term span {
+	background-image: url("data:image/x-icon,%00%00%01%00%01%00%10%10%00%00%01%00%20%00h%04%00%00%16%00%00%00(%00%00%00%10%00%00%00%20%00%00%00%01%00%20%00%00%00%00%00%00%00%00%00%13%0B%00%00%13%0B%00%00%00%00%00%00%00%00%00%00FF%A2%FFN%3Dy%FFe%25%0C%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFS8c%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFV5R%FFl%2F%16%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFl%2F%16%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FF%B3%A0%A7%FF%9Br%60%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FF%96jX%FF%B8%9B%8F%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FF%7D%7C%BB%FF%FF%FF%FF%FF%CE%BA%B1%FFr7%1E%FFn2%18%FF%C9%B2%A9%FF%FF%FF%FF%FF%92eR%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFMM%A5%FF%F9%F8%FB%FF%FF%FF%FF%FF%EF%E8%E5%FF%EF%E8%E5%FF%FF%FF%FF%FF%FA%F7%F6%FFj-%13%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FF%C9%C9%E4%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D2%BF%B7%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FF%5C%5C%AD%FF%DE%DE%EF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%E4%D9%D4%FFw%3F'%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FF%7C%7C%BD%FF%F2%F2%F8%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%F4%F0%EE%FF%90cO%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFHH%A3%FF%A8%A8%D3%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%B3%93%86%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFOO%A6%FF%A4%A4%D1%FF%FF%FF%FF%FF%FF%FF%FF%FF%A1%A1%D0%FFjI%5C%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFUU%AA%FF%FD%FD%FE%FF%FB%FB%FD%FFSS%A9%FFFF%A0%FF%5D.1%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FF%CB%CB%E5%FF%C6%C6%E3%FFFF%A2%FFFF%A2%FFHD%99%FF%60%2B%25%FFe%25%0A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FF%87%87%C3%FF%87%87%C3%FFFF%A2%FFFF%A2%FFFF%A2%FFIC%92%FFb(%1A%FFe%25%0A%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFMM%A5%FFMM%A5%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFK%40%87%FFd'%11%FFe%25%0A%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFFF%A2%FFO%3Ct%FFe%25%0C%FF%00%00%00%C0%00%00%A0%CD%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00");
+	*background-image: url(http://cleartypemedia.com/favicon.ico);
+	background-image/*\**/: url(http://cleartypemedia.com/favicon.ico)\9;
+	top: 60%;
+}
+
+#linkedin-term span {
+	background-image: url("data:image/x-icon,%00%00%01%00%01%00%10%10%00%00%00%00%00%00h%03%00%00%16%00%00%00(%00%00%00%10%00%00%00%20%00%00%00%01%00%18%00%00%00%00%00%40%03%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%BB%A4k%C2c%08%CFc%03%BBO%00%A1H%0E%A1H%0E%93%3D%0E%851%0D%851%0D%851%0D%851%0D%851%0D%851%0D%851%0D%851%0D%BB%A4k%A9%5C%0D%BBO%00%CEh%00%CEa%00%C8%5B%00%C2U%00%BBO%00%B5I%00%AFB%00%A9%3C%00%A26%00%9C0%00%9C0%00%9C0%00%9C0%00%851%0D%A9_%0D%CEu%00%D1w%0F%DA%8D%3F%DA%88%3F%CFo%1F%CDt%2F%CCz%3F%C3k%2F%AFB%00%A9%3C%00%B3%5B%2F%B4c%3F%AEV%2F%9C0%00%851%0D%A9d%0D%D1%83%0F%DC%9DJ%FF%FF%FF%FF%FF%FF%E8%B5%87%F2%D8%C3%FF%FF%FF%EF%D6%C3%BAT%0F%B4M%0F%EB%D1%C3%FF%FF%FF%E8%CE%C3%A2%3C%0F%851%0D%A9h%0D%D4%91%1F%DF%A8V%FF%FF%FF%FF%FF%FF%E9%BC%8F%F4%DC%C7%FF%FF%FF%F2%DA%C7%C3d%1F%BE_%1F%ED%D5%C7%FF%FF%FF%EA%D3%C7%A8I%1F%851%0D%A9h%0D%D4%91%1F%DF%A8V%FF%FF%FF%FF%FF%FF%E9%BC%8F%F4%DC%C7%FF%FF%FF%F2%DA%C7%C3d%1F%BE_%1F%ED%D5%C7%FF%FF%FF%EA%D3%C7%A8I%1F%851%0D%A9l%0D%D7%9E.%E1%B2b%FF%FF%FF%FF%FF%FF%EB%C3%96%F5%E0%CB%FF%FF%FF%F4%DD%CB%CDt.%C8o.%F0%DA%CB%FF%FF%FF%ED%D7%CB%B3%5B.%851%0D%A9p%0D%DA%AA%3D%E3%BBm%FF%FF%FF%FF%FF%FF%EC%CA%9E%F6%E3%CE%FF%FF%FF%FD%F7%F3%DD%99a%D1~%3D%F9%EE%E7%FF%FF%FF%E8%C9%B6%BEk%3D%8A5%0D%A9t%0D%DD%B5M%E5%C4y%FF%FF%FF%FF%FF%FF%EE%D1%A6%F6%E7%D2%FF%FF%FF%FF%FF%FE%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%DE%AF%8F%C7%7BM%8F8%0D%A9v%0D%E0%C0%5C%E6%C8%7B%F7%ED%D7%F7%EC%D7%EC%CD%99%F2%DA%B8%F7%E9%D7%F2%D7%B8%EA%BD%8F%F5%E0%CC%F6%E5%D7%E7%BC%99%D4%8F%5C%D0%8B%5C%93%3D%0E%A9v%0D%E3%C7l%E3%C6l%E8%CD%87%EC%D2%9A%E3%BAl%E3%B7l%E3%B3l%E3%AFl%E3%ABl%E3%A8l%E3%A4l%DF%A0l%DC%9Dl%D8%99l%97A%0E%A9v%0E%E6%CD%7B%E7%D0%83%FF%FF%FF%FF%FF%FF%EE%D7%A4%E6%C1%7B%E6%BE%7B%E6%BB%7B%E6%B8%7B%E6%B4%7B%E6%B1%7B%E6%AD%7B%E3%AA%7B%E0%A7%7B%9CE%0E%A9v%0E%E7%CF%80%E7%CF%80%FD%FC%F7%FF%FF%FF%ED%D7%A0%E7%C7%80%E7%C4%80%E7%C1%80%E7%BD%80%E7%BA%80%E7%B7%80%E7%B4%80%E7%B0%80%E4%AD%80%A1H%0E%A9v%0E%E6%CD~%E7%CF%80%E9%D2%88%EA%D5%90%E7%CE%80%E7%CA%80%E7%C7%80%E7%C4%80%E7%C1%80%E7%BD%80%E7%BA%80%E7%B7%80%E7%B4%80%E5%AE%7D%A5L%0E%A9v%0D%D8%B8%5C%E7%CF%80%E7%CF%80%E7%CF%80%E7%CF%80%E7%CE%80%E7%CA%80%E7%C7%80%E7%C4%80%E7%C1%80%E7%BD%80%E7%BA%80%E6%B6~%D5%95W%A9P%0E%BB%A4k%A6u%11%AAw%0E%AAw%0F%AAw%0F%AAw%0F%AAw%0F%AAv%0F%AAq%0F%AAn%0F%AAj%0F%AAf%0F%AAa%0F%AA%5D%0F%A6Z%11%BB%A4k%00%00%BC%3C%00%00%1D%CC%00%00%8C%90%00%00%8C%00%00%00%00%02%00%00%00l%00%00%00%00%00%00%00%10%00%00%BC%B4%00%00g%90%00%00%15D%00%00%BF%E6%00%00%00%02%00%00%00%06%00%00%BC%E0%00%00%00%00");
+	*background-image: url(http://linkedin.com/favicon.ico);
+	background-image/*\**/: url(http://linkedin.com/favicon.ico)\9;
+	top: 72%;
+}
+
+#delicious-term span {
+	background-image: url("data:image/x-icon,%00%00%01%00%02%00%10%10%00%00%01%00%18%00h%03%00%00%26%00%00%00%10%10%00%00%01%00%20%00h%04%00%00%8E%03%00%00(%00%00%00%10%00%00%00%20%00%00%00%01%00%18%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%D2%D2%D3%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%D0t2%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00(%00%00%00%10%00%00%00%20%00%00%00%01%00%20%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%00%00%00%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%D2%D2%D3%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%D0t2%FF%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00");
+	*background-image: url(http://delicious.com/favicon.ico);
+	background-image/*\**/: url(http://delicious.com/favicon.ico)\9;
+	top: 48%;
+}
+
+#stack-term span {
+	background-image: url("data:image/x-icon,%00%00%01%00%01%00%10%10%00%00%01%00%20%00h%04%00%00%16%00%00%00(%00%00%00%10%00%00%00%20%00%00%00%01%00%20%00%00%00%00%00%00%00%00%00%13%0B%00%00%13%0B%00%00%00%00%00%00%00%00%00%00%00%00%00%00llm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FF%00%00%00%00%00%00%00%00llm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FF%00%00%00%00%00%00%00%00llm%FFllm%FF%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00llm%FFllm%FF%00%00%00%00%00%00%00%00llm%FFllm%FF%00%00%00%00llm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FF%00%00%00%00llm%FFllm%FF%00%00%00%00%00%00%00%00llm%FFllm%FF%00%00%00%00llm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FFllm%FF%00%00%00%00llm%FFllm%FF%00%00%00%00%00%00%00%00llm%FFllm%FF%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00Tx%9B%14Ox%A0%3CJx%A4dDx%AA%91Lx%A2%19llm%FFllm%FF%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00Kx%A3%0F%3Cx%B1R%3Ex%B0%84%3Ex%B0%B9%3Ex%B0%DE%3Ex%B0%FF%3Fx%AF%FFAw%AD%FFBv%AB%FFDw%A9%3E%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%3Dx%B0*Ax%AD%FFAx%AD%FFAx%AD%FFBw%AB%ECEv%A9%C0Cw%AB%85%3B%7B%B3T*%83%C5R%15%8D%DCY%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%3Fx%AF%09Bx%ACsDv%AAQDv%AA%2B%3B%7B%B3%08%00%00%00%00%18%8C%D9%0C%09%93%E8r%03%97%EF%E2%02%97%EE%FF%00%99%F2%1B%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%09%93%E8%19%03%97%EE%82%03%96%EE%ED%05%95%EC%FF%04%97%EB%EC%09%91%EA%82%1Dx%E6N%20r%E9%02%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%0F%91%E1%02%02%97%EE%24%03%97%EE%86%05%96%EC%F3%06%95%EB%FF%06%95%EB%EB%04%98%EB%83%0D%8C%E9%10'm%E5L%2Fc%E4%FC.d%E4%81%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%04%96%ED%09%06%95%EB%D5%06%95%EB%FF%06%95%EB%E9%06%96%EB%7C%04%98%EB%17%00%00%00%00%2Bg%E46.d%E4%F8%2Cf%E4%F8%2Cf%E4D%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%06%95%EBl%06%95%EB~%05%96%EB%15%00%00%00%00%00%00%00%00-d%E4%22-e%E4%E5%2Cf%E4%FF%2Cf%E4X%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00.c%E4%0F%2Ce%E4%CB%2Cf%E4%FF%2Cf%E4%7B%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00.c%E4%02%2Cf%E4%AD%2Cf%E4%FF%2Cf%E4%A1%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00.d%E4%02%2Cf%E4%93%2Cf%E4%FF%2Cf%E4%C0%2Cf%E4%07%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%80%01%00%00%80%01%F0%BF%9F%F9%00%00%90%09%00%00%90%09%00%00%9F%01%00%00%E0%07%00%00%E0%07%00%00%E0%83%00%00%FE%01%00%00%F0%01%00%00%F0!%00%00%F8%C3%FF%FF%FF%87%FF%FF%FF%0F%00%00%FE%0F%00%00");
+	*background-image: url(http://sstatic.net/stackoverflow/favicon.ico);
+	background-image/*\**/: url(http://sstatic.net/stackoverflow/favicon.ico)\9;
+	top: 84%;
+}
+
+/* 5.FIGURES & IMAGES */
+
+/*
+#portfolio figure {
+	left: 1ex;
+	margin-right: 1em;
+	margin-top: 0.4em;
+	position: absolute;
+	top: 0;
+}
+
+#portfolio figure a {
+	background-color: #CCC;
+	background-color: rgba(204, 204, 204, 0.4);
+	border: 4px solid rgba(204, 204, 204, 0.4);
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	display: block;
+	height: 150px;
+}
+
+#portfolio figure + h3 { margin-left: 12em; }
+
+#portfolio figure + h3 + p { margin-left: 15.35em; }
+*/
+
+/* 6.TABLES */
+/* 7.FORMS */
+/* 8.BANNER */
+/* 9.NAVIGATION */
+/* 10.CONTENT */
+
+section {
+	-moz-box-shadow: -0.5ex -0.5ex 2em rgba(255, 243, 223, 0.6) inset, 0 0.3ex 0.6em rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: -0.5ex -0.5ex 2em rgba(255, 243, 223, 0.6) inset, 0 0.3ex 0.6em rgba(0, 0, 0, 0.2);
+	box-shadow: -0.5ex -0.5ex 2em rgba(255, 243, 223, 0.6) inset, 0 0.3ex 0.6em rgba(0, 0, 0, 0.2);
+}
+
+section, footer {
+	margin: 2em auto;
+	min-width: 25.25em;
+	padding: 1em;
+	width: 94%;
+}
+
+#hello p {
+	font-size: 140%;
+	min-height: 7em;
+	padding-right: 1.3em;
+}
+
+#portfolio article {
+	background-color: #FFF9EF;
+	margin-bottom: 1.5em;
+	/* min-height: 150px; */
+	padding: 0.4em 1ex 1.4em 1em;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-webkit-transition: -webkit-box-shadow 0.5s;
+}
+
+#portfolio article:hover {
+	-moz-box-shadow: 0 0.1ex 0.9ex rgba(204, 204, 204, 0.9);
+	-webkit-box-shadow: 0 0.1ex 0.9ex rgba(204, 204, 204, 0.9);
+	box-shadow: 0 0.1ex 0.9ex rgba(204, 204, 204, 0.9);
+}
+
+#portfolio h3 {
+	line-height: 1.5;
+	margin-top: -1.5ex;
+}
+
+#portfolio h3.extant { margin-top: 0; }
+
+#portfolio h3 a {
+	background-color: #FFF;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: 0 1px 4px rgba(155, 155, 155, 0.3), 0 0 40px rgba(255, 255, 255, 0.1) inset, 0 10px 10px -10px rgba(155, 155, 155, 0.5), 0 1px 4px rgba(155, 155, 155, 0.3), 0 0 40px rgba(155, 155, 155, 0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(155, 155, 155, 0.3), 0 0 40px rgba(255, 255, 255, 0.1) inset, 0 10px 10px -10px rgba(155, 155, 155, 0.5), 0 1px 4px rgba(155, 155, 155, 0.3), 0 0 40px rgba(155, 155, 155, 0.1) inset;
+	box-shadow: 0 1px 4px rgba(155, 155, 155, 0.3), 0 0 40px rgba(255, 255, 255, 0.1) inset, 0 10px 10px -10px rgba(155, 155, 155, 0.5), 0 1px 4px rgba(155, 155, 155, 0.3), 0 0 40px rgba(155, 155, 155, 0.1) inset;
+	color: #006100;
+	margin-left: -1ex;
+	padding: 1ex 1ex 0.7ex;
+}
+
+#portfolio h3 a:before {
+	content: "";
+	position: absolute;
+	z-index: -2;
+}
+
+#portfolio h3 a:hover:after {
+	bottom: 0.25ex;
+	color: #54544B;
+	color: rgba(84, 84, 75, 0.4);
+	content: attr(href);
+	font-size: 77%;
+	font-style: italic;
+	left: 0;
+	margin-left: 3ex;
+	position: absolute;
+}
+
+#portfolio p { margin-top: 1em; }
+
+/* 11.MAIN */
+/* 12.COMPLIMENTARY */
+/* 13.CONTENTINFO */
+
+footer {
+	background-color: #EEE;
+	background-color: rgba(255, 255, 255, 0.4);
+	*background-color: #EEE;
+	border:1px solid rgba(204, 204, 204, 0.4);
+	-moz-border-radius: 1ex 1ex 1ex 1ex;
+	-webkit-border-radius: 1ex 1ex 1ex 1ex;
+	border-radius: 1ex 1ex 1ex 1ex;
+	border-color: #CCC;
+	border: 1px solid rgba(204, 204, 204, 0.4);
+	overflow: hidden;
+	text-align: center;
+}
