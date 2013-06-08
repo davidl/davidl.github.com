@@ -186,8 +186,8 @@ a:hover {
 	-moz-border-radius: 0.5ex 0.5ex 0.5ex 0.5ex;
 	-webkit-border-radius: 0.5ex 0.5ex 0.5ex 0.5ex;
 	border-radius: 0.5ex 0.5ex 0.5ex 0.5ex;
-	margin: 0 -0.4ex;
-	padding: 0 0.4ex;
+	/*margin: 0 -0.4ex;
+	padding: 0 0.4ex;*/
 	text-decoration: none;
 	*text-decoration: underline;
 	-moz-transition: background-color 0.1s;
