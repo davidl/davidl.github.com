@@ -92,8 +92,7 @@ h3 {
 
 /* LINKS */
 
-a,
-a:visited {
+a, a:visited {
 	border-bottom: 1px solid rgba(23, 119, 175, 0.1);
 	color: rgb(23, 119, 175);
 	font-weight: bold;
@@ -143,9 +142,9 @@ aside ul {                   /* css-tricks.com/using-flexbox/ */
   font-size: 1.5em;
 }
 
-address a, address a:hover {
+address a, address a:visited, address a:hover {
   margin: auto;
-  border-bottom: 0 none;
+  border-bottom-color: #ededed;
   line-height: 0;
   padding: 1ex;
   text-decoration: none;
@@ -210,9 +209,11 @@ a.next {
   border: 1px solid rgba(51, 137, 207, 0.1);
   bottom: 1.8em;
   font-size: 3em;
+  margin: 0;
   padding: 0.4ex 1ex 0;
   position: absolute;
   right: 0.1em;
+  border-radius: 0;
 }
 
 a.prev.last,
