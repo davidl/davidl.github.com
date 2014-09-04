@@ -109,7 +109,8 @@ a:hover {
 	background-color: #EAEEEC;
 	background-color: rgba(51, 137, 207, 0.1);
 	border-bottom: 1px solid rgba(52, 158, 219, 0.4);
-	/* border-radius: 0.5ex 0.5ex 0.5ex 0.5ex; */
+	border-radius: 0.5ex;
+	margin: 0 -0.2em;
 	padding: 0 0.2em;
 	text-decoration: none;
 	-webkit-transition: background-color 0.1s;
@@ -142,12 +143,15 @@ aside ul {                   /* css-tricks.com/using-flexbox/ */
   font-size: 1.5em;
 }
 
-address a {
+address a, address a:hover {
   margin: auto;
   border-bottom: 0 none;
+  line-height: 0;
   padding: 1ex;
   text-decoration: none;
 }
+
+address a:hover { border-bottom: 1px solid rgba(52, 158, 219, 0.4); }
 
 header,
 article {
