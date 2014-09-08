@@ -259,7 +259,8 @@ a.next:after {
 	height: 1rem;
 	left: 49%;
 	position: absolute;
-	transform: translateX(-0.5rem) rotate(45deg);
+	-webkit-transform: translateX(-0.5rem) rotate(45deg);
+	        transform: translateX(-0.5rem) rotate(45deg);
 	width: 1rem;
 }
 
