@@ -272,10 +272,6 @@ a.next:after {
 	top: 15%;
 }
 
-#intro .next {
-  right: calc(50% - 27px);
-}
-
 article:last-of-type {
   margin-bottom: 0;
 }
