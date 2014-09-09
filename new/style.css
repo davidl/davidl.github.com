@@ -220,7 +220,7 @@ a.view-site {
 }
 
 aside ul {
-    -webkit-flex-pack: center;
+    -webkit-box-pack: center;
     -webkit-flex-wrap: wrap;
 	        flex-wrap: wrap;
 	font-size: 0.8em;
@@ -238,16 +238,17 @@ aside li {
 
 a.prev,
 a.next {
-  border: 1px solid rgba(51, 137, 207, 0.1);
-  border-radius: 48px 48px 8px 8px;
-  bottom: 1.25em;
-  font-size: 3em;
-  height: 48px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  right: 0.1em;
-  width: 48px;
+    background-color: transparent;
+    border: 1px solid rgba(51, 137, 207, 0.1);
+    border-radius: 48px 48px 8px 8px;
+    bottom: 1.25em;
+    font-size: 3em;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0.1em;
+    width: 48px;
 }
 
 a.prev.last,
