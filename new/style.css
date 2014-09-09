@@ -185,7 +185,13 @@ article {
 
 article {
 	background-color: #FFF9EF;
+	border: 2px solid #FFEDCF;
 	margin: 1.5em 0;
+}
+
+article:last-of-type {
+    border-width: 0;
+    margin-bottom: 0;
 }
 
 article p { margin: 1ex; }
@@ -214,10 +220,11 @@ a.view-site {
 }
 
 aside ul {
+    flex-pack: center;
     -webkit-flex-wrap: wrap;
 	        flex-wrap: wrap;
-	justify-content: center;
 	font-size: 0.8em;
+	justify-content: center;
 	padding: 0 10px;
 }
 
@@ -237,6 +244,7 @@ a.next {
   font-size: 3em;
   height: 48px;
   margin: 0;
+  padding: 0;
   position: absolute;
   right: 0.1em;
   width: 48px;
@@ -273,14 +281,10 @@ a.next:after {
 	top: 15%;
 }
 
-article:last-of-type {
-  margin-bottom: 0;
-}
-
 footer {
-  border-top: 4px solid rgb(27, 73, 111);
-  padding: 1ex;
-  text-align: center;
+    border-top: 4px solid rgb(27, 73, 111);
+    padding: 1ex;
+    text-align: center;
 }
 
 /* ICON FONT via https://icomoon.io/ */
