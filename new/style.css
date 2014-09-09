@@ -220,7 +220,6 @@ a.view-site {
 }
 
 aside ul {
-    -webkit-box-pack: center;
     -webkit-flex-wrap: wrap;
 	        flex-wrap: wrap;
 	font-size: 0.8em;
