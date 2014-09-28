@@ -8,11 +8,9 @@
 <meta name="breakpoint" content="small" media="(max-width: 520px)">
 <meta name="breakpoint" content="medium" media="(min-width: 521px) and (max-width: 900px)">
 <meta name="breakpoint" content="large" media="(min-width: 901px)">
-
 <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
 <link rel="stylesheet" href="style.css">
 <meta name="description" content="David Lantner is a web developer in South Florida">
-<!--<link rel="apple-touch-icon" href="touch_icon.png">-->
 <script>
 /* TO DO - use Bower instead: https://github.com/benschwarz/metaquery */
 !function(a,b){"use strict";var c={breakpoints:{},_isTicking:!1,_debounceLastTime:0,_namedEvents:{},_eventMatchCache:{},_globalEvents:[],onBreakpointChange:function(){var a=Array.prototype.slice.call(arguments),b=a.pop(),d=a.pop();"undefined"==typeof d?c._globalEvents.push(b):(c._namedEvents[d]=[]).push(b),k()}},d=function(c){/in/.test(b.readyState)?a.setTimeout(function(){d(c)},9):c()},e=function(a,b){var c=a.className.split(" "),d=c.indexOf(b);d>-1&&(c.splice(d,1),a.className=c.join(" "))},f=function(a,b){-1===a.className.indexOf(b)&&(a.className=""!==a.className?a.className+" "+b:b)},g=function(a,c){var d="breakpoint-"+c,g=b.documentElement;a?f(g,d):e(g,d)},h=function(a){c._globalEvents.forEach(function(b){"function"==typeof b&&b(a)})},i=function(){c._isTicking||j(k),c._isTicking=!0},j=function(b,d){if(!a.requestAnimationFrame){var e=(new Date).getTime(),f=Math.max(0,16-(e-c._debounceLastTime)),g=a.setTimeout(function(){b(e+f)},f);return c._debounceLastTime=e+f,g}a.requestAnimationFrame(b,d)},k=function(){c._isTicking=!1;var b=[];for(var d in c.breakpoints){var e=c.breakpoints[d],f=a.matchMedia(e).matches;if(c._namedEvents[d]&&c._eventMatchCache[d]!==f){c._eventMatchCache[d]=f;for(var i=0;i<c._namedEvents[d].length;i++){var j=c._namedEvents[d][i];"function"==typeof j&&j(f)}}f&&b.push(d),g(f,d)}0!==b.length&&h(b)},l=function(){for(var a=b.getElementsByTagName("meta"),d=0;d<a.length;d++)if("breakpoint"===a[d].name){var e=a[d].getAttribute("content"),f=a[d].getAttribute("media");c.breakpoints[e]=f}},m=function(){l(),k()},n=function(){l(),k(),a.addEventListener("resize",i)};"undefined"!=typeof module&&module.exports?module.exports=c:a.metaQuery=c,m(),d(n)}(window,document);
@@ -37,7 +35,6 @@
 			<h3>
 				<a href="http://www.broadbandmap.gov/">National Broadband Map</a>
 			</h3>
-			<!--<figure><img src="" alt=""><figcaption>figcaption text</figcaption></figure>-->
 			<p>Led the front-end development of <strong>stable, accessible, semantic HTML5</strong> throughout the site with <strong>CSS3</strong> and <strong>jQuery</strong> to <strong>exceed Section 508</strong> utilizing <strong>WAI-ARIA</strong> for rich interaction and <strong>high performance</strong>. The <a href="http://www.broadbandmap.gov/rank">Rank</a> pages serve as great examples of my work: <strong>complex, dynamic, accessible forms</strong> and results.</p>
 			<aside>
 				<ul>
@@ -57,7 +54,7 @@
 		</article>
 		<article id="ddom">
 			<h3>
-				<a class="url" itemprop="url" href="http://davidlantner.net/" title="this very site">Dave's Domain</a>
+				<a itemprop="url" href="http://davidlantner.net/" title="this very site">Dave's Domain</a>
 			</h3>
 			<p>My personal site where I play around with markup and semantics. Now features <strong>responsive, device-agnostic, mobile-first HTML5 and CSS3</strong>. I prioritized accessibility by using semantic markup and styles striving for <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2 AAA compliance.</p>
 			<aside>
@@ -75,7 +72,7 @@
 		</article>
 		<article id="pubmedhealth">
 			<h3>
-				<a class="url" itemprop="url" href="http://www.ncbi.nlm.nih.gov/pubmedhealth/" title="PubMed Health">PubMed Health</a>
+				<a href="http://www.ncbi.nlm.nih.gov/pubmedhealth/" title="PubMed Health">PubMed Health</a>
 			</h3>
 			<p>I contributed two jQuery plugins in use on <a href="http://pubmed.gov/">PubMed</a> at <abbr title="National Center for Biotechnology Information">NCBI</abbr>, <abbr title="National Institutes of Health">NIH</abbr> and implemented the consumer-oriented <a href="http://www.ncbi.nlm.nih.gov/pubmedhealth/blog/">PubMed Health Blog</a> by generating XHTML and RSS from a single XML file via XSLT. Also, I applied pretty-printing and syntax highlighting for debug output on all NCBI sites.</p>
 			<aside>
