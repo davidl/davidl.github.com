@@ -1,5 +1,6 @@
 html {
     background: #ededed;
+    font-size: 1.125em;
 }
 
 html,
@@ -32,7 +33,8 @@ body {
 }
 
 /* Hide visually */
-.hv {
+.hv,
+.hv-small {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -108,11 +110,10 @@ a:hover {
     background-color: #EAEEEC;
     background-color: rgba(51, 137, 207, 0.1);
     border-bottom: 1px solid rgba(52, 158, 219, 0.4);
-    border-radius: 0.5ex;
+    /*border-radius: 0.5ex;
     margin: 0 -0.2em;
-    padding: 0 0.2em;
+    padding: 0 0.2em;*/
     text-decoration: none;
-    -webkit-transition: background-color 0.1s;
     transition: background-color 0.1s;
 }
 
@@ -181,7 +182,7 @@ article {
 #hello,
 [role="main"] h2 { padding: 0 16px 0 20px; }
 
-[role="main"] h2 { margin: -2.5em 0 0 0; }
+[role="main"] h2 { margin: -2.5em 0 0; }
 
 article {
     background-color: #FFF9EF;
@@ -196,6 +197,21 @@ article:last-of-type {
 
 article p { margin: 1ex; }
 
+aside ul {
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    font-size: 0.8em;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+aside li {
+    color: #050;
+    list-style-type: none;
+    margin: 0.5ex;
+    padding: 0 0.2em;
+}
+
 a.view-site {
     background-color: #1777AF;
     background-image: none;
@@ -205,10 +221,10 @@ a.view-site {
     display: block;
     padding: 6px 12px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.42857143;
     margin: 1ex auto;
-    max-width: 4em;
+    max-width: 42%;
     text-align: center;
     text-transform: uppercase;
     -webkit-user-select: none;
@@ -219,28 +235,11 @@ a.view-site {
     white-space: nowrap;
 }
 
-aside ul {
-    -webkit-flex-wrap: wrap;
-            flex-wrap: wrap;
-    font-size: 0.8em;
-    justify-content: center;
-    padding: 0 10px;
-}
-
-aside li {
-    color: #006100;
-    list-style-type: none;
-    margin: 0.5ex;
-    padding: 0 0.2em;
-    font-style: italic;
-}
-
 a.prev,
 a.next {
     background-color: transparent;
-    border: 1px solid rgba(51, 137, 207, 0.1);
     border-radius: 48px 48px 8px 8px;
-    bottom: 1.25em;
+    bottom: 1.1em;
     font-size: 3em;
     height: 48px;
     margin: 0;
@@ -249,6 +248,8 @@ a.next {
     right: 0.1em;
     width: 48px;
 }
+
+a.prev, a.next, #portfolio a.slide { border: 1px solid rgba(51, 137, 207, 0.1); }
 
 a.prev.last,
 a.next {
@@ -322,16 +323,21 @@ footer {
 }
 
 
-
-/* TO DO: move to appropriate position in this file: */
+/* Responsive styles, using Metaquery: */
 /* Breakpoint "small": (max-width: 520px) */
-.breakpoint-small {}
+.breakpoint-small { font-size: 0.88em; }
+.breakpoint-small .view-site { max-width: 4em; }
+.breakpoint-small a.prev { bottom: 1.4em; }
 
 /* Breakpoint "medium": (min-width: 521px) and (max-width: 900px) */
-.breakpoint-medium {}
+.breakpoint-medium .wrapper { padding: 0 4em; }
 
 /* Breakpoint "large": (min-width: 901px) */
-.breakpoint-large {}
+.breakpoint-large header,
+.breakpoint-large main {
+    margin: 0 auto;
+    max-width: 42em;
+}
 
 
 /* Portfolio styles */
@@ -340,18 +346,18 @@ footer {
     background-color: #FFF;
     color: #333;
 }
-#broadbandmap h3 a {
+#broadbandmap a {
     border-bottom-color: #C4C8E0;
     color: #3B4A98;
 }
 #broadbandmap li { color: #000; }
-#broadbandmap .view-site { background-color: #49AE00; }
+#broadbandmap .view-site { background-color: #3B4A98; }
 
 /* ddom */
 #ddom {
     background-color: #ededed;
 }
-#ddom h3 a {
+#ddom a {
     border-bottom-color: rgba(52, 158, 219, 0.4);
     color: #053E6A;
 }
@@ -361,7 +367,7 @@ footer {
     background-color: #fff;
     color: #14376c;
 }
-#pubmedhealth h3 a {
+#pubmedhealth a {
     border-bottom-color: #724128;
     color: #2F4A8B;
 }
@@ -373,12 +379,12 @@ footer {
     background-color: #ebeae6;
     color: #374530;
 }
-#acob h3 a {
-    border-bottom-color: #3B5998;
+#acob a {
+    border-bottom-color: #305070;
     color: #374530;
 }
 #acob li { color: #22150f; }
-#acob .view-site { background-color: #3B5998; }
+#acob .view-site { background-color: #305070; }
 
 /* mariamahomes */
 #mariamahomes {
@@ -386,7 +392,7 @@ footer {
     background-image: linear-gradient(to bottom, #F5D391, #B3CC9F);
     color: #001333;
 }
-#mariamahomes h3 a {
+#mariamahomes a {
     border-bottom-color: #C88;
     color: #7F164C;
 }
@@ -394,4 +400,12 @@ footer {
     color: #4C0D2E;
     text-shadow: -1px -1px 0 #F5D391, 1px -1px 0 #F5D391, -1px 1px 0 #F5D391, 1px 1px 0 #F5D391;
 }
-#mariamahomes .view-site { background-color: #2D5600; }
+#mariamahomes .view-site { background-color: #2D5600; border-bottom-width: 0; }
+
+#portfolio .view-site { color: #FFF; }
+
+/*
+
+TO DO:
+    separate home page styles from generic styles
+*/
