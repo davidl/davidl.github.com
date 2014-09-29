@@ -34,7 +34,7 @@ body {
 
 /* Hide visually */
 .hv,
-.hv-small {
+.breakpoint-small .hv-small {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -405,7 +405,6 @@ footer {
 #portfolio .view-site { color: #FFF; }
 
 /*
-
-TO DO:
-    separate home page styles from generic styles
+TO DO: 
+  separate home page styles from generic styles
 */
