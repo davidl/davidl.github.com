@@ -224,7 +224,7 @@ a.view-site {
     font-weight: bold;
     line-height: 1.42857143;
     margin: 1ex auto;
-    max-width: 42%;
+    max-width: 43%;
     text-align: center;
     text-transform: uppercase;
     -webkit-user-select: none;
@@ -330,7 +330,11 @@ footer {
 .breakpoint-small a.prev { bottom: 1.4em; }
 
 /* Breakpoint "medium": (min-width: 521px) and (max-width: 900px) */
-.breakpoint-medium .wrapper { padding: 0 4em; }
+.breakpoint-medium header,
+.breakpoint-medium main {
+    margin: 0 auto;
+    max-width: 36em;
+}
 
 /* Breakpoint "large": (min-width: 901px) */
 .breakpoint-large header,
