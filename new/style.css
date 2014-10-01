@@ -207,9 +207,9 @@ footer {
 .breakpoint-small .view-site { max-width: 4em; }
 .breakpoint-small a.prev { bottom: 1.4em; }
 
-/* Breakpoint "medium": (min-width: 521px) and (max-width: 900px) */
+/* breakpoint-medium (min-width: 521px) and (max-width: 900px) */
 
-/* Breakpoint "large": (min-width: 901px) */
+/* breakpoint-large (min-width: 901px) */
 
 
 
@@ -295,12 +295,13 @@ a.next {
     padding: 0;
     position: absolute;
     right: 0.1em;
+    transition: all 0.1s linear;
     width: 48px;
 }
 
-a.prev, a.next, #portfolio a.slide { border: 1px solid rgba(51, 137, 207, 0.1); }
+.breakpoint-large main a.slide { right: -54px; }
 
-#portfolio a.slide:hover { border-color: rgba(52, 158, 219, 0.4); }
+a.prev, a.next, #portfolio a.slide { border: 1px solid rgba(51, 137, 207, 0.1); }
 
 a.slide.prev.last, a.next {
     bottom: 0.1em;
@@ -316,7 +317,7 @@ a.next:after {
     border-width: 2px 0 0 2px;
     content: '';
     height: 1rem;
-    left: 49%;
+    left: 48%;
     position: absolute;
     -webkit-transform: translateX(-0.5rem) rotate(45deg);
             transform: translateX(-0.5rem) rotate(45deg);
@@ -331,6 +332,12 @@ a.next:after {
     border-width: 0 2px 2px 0;
     top: 15%;
 }
+
+#intro a.next:hover,
+#portfolio a.slide:hover { border-color: rgba(52, 158, 219, 0.4); }
+
+a.slide:hover:after { box-shadow: 1px 1px 1px rgba(52, 158, 219, 0.4); }
+a.prev:hover:after { box-shadow: -1px -1px 1px rgba(52, 158, 219, 0.4); }
 
 /* Portfolio styles */
 /* broadbandmap */
