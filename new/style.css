@@ -131,14 +131,15 @@ aside ul {                   /* css-tricks.com/using-flexbox/ */
 address a, address a:visited, address a:hover {
   margin: auto;
   border-bottom-color: #ededed;
+  border-radius: 1em;
   line-height: 0;
   padding: 1ex;
   text-decoration: none;
+  transition: all 0.2s ease-out;
 }
 
 address a:hover {
     border-bottom: 1px solid rgba(52, 158, 219, 0.4);
-    border-radius: 1em;
 }
 
 header,
@@ -192,6 +193,8 @@ footer {
 }
 .icon-mail:before {
     content: "\e600";
+    position: relative;
+    top: 0.074em;
 }
 .icon-social-twitter:before {
     content: "\e601";
@@ -234,7 +237,7 @@ HOMEPAGE STYLES
   content: "";
   height: 0.15em;
   left: 0;
-  margin: 1.5em 0 0;
+  margin: 1em 0 0;
   min-width: 6em;
   position: absolute;
   top: 100%;
