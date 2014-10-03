@@ -87,7 +87,7 @@ h3 {
     font-size: 1.25em;
     line-height: 1.5;
     margin: 0;
-    padding: 0.75em 0.8ex;
+    padding: 0.75em 20px;
 }
 
 /* LINKS */
@@ -156,7 +156,7 @@ article:last-of-type {
     margin-bottom: 0;
 }
 
-article p { margin: 1ex; }
+article p { margin: 1ex 20px; }
 
 
 
@@ -251,7 +251,7 @@ aside ul {
             flex-wrap: wrap;
     font-size: 0.8em;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 aside li {
@@ -342,7 +342,7 @@ a.prev:hover:after { box-shadow: -1px -1px 1px rgba(52, 158, 219, 0.4); }
 /* Portfolio styles */
 /* broadbandmap */
 #portfolio aside {
-  margin: 14px 0 16px;
+  margin: 1.5em 0 2em;
 }
 
 #broadbandmap {
