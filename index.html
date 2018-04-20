@@ -42,7 +42,8 @@
       margin-bottom: .2em;
       text-shadow: 1px 3px 6px rgba(69, 93, 111, 0.4), 0 1px 1px #3389cf;
     }
-    div {
+    main {
+      display: block; /* IE 11 */
       max-width: 42em;
       margin: 25vh 0 0;
     }
@@ -76,7 +77,7 @@
   </style>
 </head>
 <body id="hcard-David-Lantner" class="vcard" itemscope itemtype="http://schema.org/Person">
-  <div>
+  <main>
     <header>
       <h1 class="fn" itemprop="name"><span class="given-name">David</span> <span class="family-name">Lantner</span></h1>
       <p itemprop="description">I create software using web technologies.</p>
@@ -87,7 +88,7 @@
         <li><a href="mailto:davidlantner@gmail.com" class="email" itemprop="email">Email</a></li>
       </ul>
     </header>
-  </div>
+  </main>
   <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
