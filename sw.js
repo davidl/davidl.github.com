@@ -5,7 +5,7 @@ console.log('WORKER: executing.');
 /* From Chris Coyier's Simple-Offline-Site:
    https://github.com/chriscoyier/Simple-Offline-Site/blob/master/js/service-worker.js
 */
-var version = 'd2018::2';
+var version = 'd2018::3';
 var offlineFundamentals = [
   '',
   'League_Gothic-webfont.woff'
