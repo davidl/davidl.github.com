@@ -5,10 +5,11 @@ console.log('WORKER: executing.');
 /* From Chris Coyier's Simple-Offline-Site:
    https://github.com/chriscoyier/Simple-Offline-Site/blob/master/js/service-worker.js
 */
-var version = 'd2018::3';
+var version = 'd2018::4';
 var offlineFundamentals = [
   '',
-  'League_Gothic-webfont.woff'
+  'League_Gothic-webfont.woff',
+  'favicon.ico'
 ];
 
 self.addEventListener("install", function(event) {
